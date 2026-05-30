@@ -1,1 +1,401 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pawan ❤️ Khwahish</title><style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#7B1113,#A52A2A,#E8DCCB);
+color:white;
+overflow:hidden;
+text-align:center;
+}
+
+.page{
+display:none;
+min-height:100vh;
+padding:30px;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+.active{
+display:flex;
+}
+
+.card{
+background:rgba(255,255,255,0.12);
+padding:30px;
+border-radius:25px;
+backdrop-filter:blur(10px);
+max-width:900px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#E8DCCB;
+color:#7B1113;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+margin-top:20px;
+}
+
+input{
+padding:14px;
+border:none;
+border-radius:20px;
+width:250px;
+text-align:center;
+font-size:16px;
+}
+
+img{
+max-width:90%;
+border-radius:20px;
+margin:10px;
+}
+
+.heart{
+position:fixed;
+font-size:25px;
+animation:float 6s linear infinite;
+pointer-events:none;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-100px);}
+}
+.final-scene{
+width:90%;
+max-width:700px;
+border-radius:25px;
+box-shadow:0 0 40px rgba(255,255,255,0.35);
+animation:pulse 3s infinite;
+margin-top:15px;
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+}
+</style></head><body><!-- PAGE 1 --><div class="page active" id="page1"><div class="card"><h1>❤️ Pawan & Khwahish ❤️</h1><p>
+A little story written with memories,
+laughter and love.
+</p><br><button onclick="showPage(2)">
+Begin ❤️
+</button></div></div><!-- PAGE 2 --><div class="page" id="page2"><div class="card"><h1>🔐 Secret Password</h1><p>
+Only one person knows this password ❤️
+</p><br><input id="password" placeholder="Enter Password"><br><button onclick="checkPassword()">
+Unlock
+</button><p id="passMsg"></p></div></div><!-- PAGE 3 --><div class="page" id="page3"><div class="card"><h1>❤️ Loading Love Files ❤️</h1><h2 id="loadingText">0%</h2><p id="loadingMsg">
+Searching...
+</p></div></div><!-- PAGE 4 --><div class="page" id="page4"><div class="card"><h1>⚠️ Cute Warning ⚠️</h1><p>95% Love ❤️
+
+<br><br>
+
+3% Cuteness 🥺
+
+<br><br>
+
+2% Khwahish Drama 😂
+
+</p><button onclick="showPage(5)">
+Continue ❤️
+</button></div></div><!-- PAGE 5 --><div class="page" id="page5"><div class="card"><h1>📸 Memory Gallery 1</h1><img src="Screenshot_20260509_131059~2.jpg"><img src="Snapchat-2004632393.jpg"><p>Every picture tells a story.
+
+Every story reminds me of you ❤️
+
+</p><button onclick="showPage(6)">
+Next ❤️
+</button></div></div>
+  <!-- PAGE 6 --><div class="page" id="page6"><div class="card"><h1>📸 Memory Gallery 2</h1><img src="Snapchat-1474010146.jpg"><img src="IMG-20260508-WA0058.jpg"><p>Some moments became memories.
+
+Some memories became comfort.
+
+And somehow...
+
+You became home ❤️
+
+</p><button onclick="showPage(7)">
+Next ❤️
+</button></div></div><!-- PAGE 7 --><div class="page" id="page7"><div class="card"><h1>❤️ Favorite Moments ❤️</h1><img src="Snapchat-274793691.jpg"><img src="Snapchat-501018633.jpg"><p>Out of every laugh,
+
+every memory,
+
+every conversation...
+
+these moments will always stay close to my heart ❤️
+
+</p><button onclick="showPage(8)">
+Continue ❤️
+</button></div></div><!-- PAGE 8 --><div class="page" id="page8"><div class="card"><h1>💕 Love Meter 💕</h1><h2 style="font-size:70px;">
+100%
+</h2><p>Error 404 ❌
+
+Love level too high to calculate ❤️
+
+</p><button onclick="showPage(9)">
+Next ❤️
+</button></div></div><!-- PAGE 9 --><div class="page" id="page9"><div class="card"><h1>💌 Kuch Alfaaz Tumhare Liye 💌</h1><p style="line-height:2;font-size:22px;">Kabhi kabhi lagta hai ki tum meri zindagi ka wo hissa ho,
+
+jise main kabhi khona nahi chahti. ❤️
+
+<br><br>
+
+Mohabbat lafzon se kaha bayaan hoti hai,
+
+yeh toh nazron se samjhi jaati hai.
+
+❤️
+
+<br><br>
+
+Tum mile toh aisa laga,
+
+jaise adhuri si kahani ko uska anjaam mil gaya.
+
+❤️
+
+<br><br>
+
+Na chand chahiye,
+
+na sitare chahiye,
+
+bas tum jaisa ek saathi chahiye.
+
+🌹❤️
+
+<br><br>
+
+Aur agar koi pooche,
+
+meri sabse khoobsurat yaad kya hai...
+
+toh jawab hoga:
+
+"Tum." ❤️
+
+</p><button onclick="showPage(10)">
+Continue ❤️
+</button></div></div><!-- PAGE 10 --><div class="page" id="page10"><div class="card"><h1>😂 Relationship Truth Detector 😂</h1><p>🎭 More Dramatic:
+<b>Khwahish</b>
+
+<br><br>
+
+❤️ Loves More:
+<b>Both</b>
+
+<br><br>
+
+😤 Gets Angry More:
+<b>Khwahish</b>
+
+<br><br>
+
+😏 More Horny:
+<b>Pawan</b>
+
+<br><br>
+
+🥺 More Emotional:
+<b>Pawan</b>
+
+</p><button onclick="showPage(11)">
+Final Chapters ❤️
+</button></div></div>
+  <!-- PAGE 11 --><div class="page" id="page11"><div class="card"><h1>🎁 Secret Gift 🎁</h1><p>
+I kept something special for you...
+<br><br>
+Open carefully ❤️
+</p><button onclick="showGift()">
+🎁 Open Gift
+</button><div id="giftLetter" style="display:none;"><h2>💌 A Letter For You 💌</h2><p style="line-height:2;font-size:20px;">Dear Pawan,
+
+<br><br>
+
+There are thousands of words in the world,
+
+but somehow they never feel enough when it comes to you.
+
+<br><br>
+
+Thank you for every smile.
+
+Thank you for every memory.
+
+Thank you for becoming such an important part of my life.
+
+<br><br>
+
+You entered quietly,
+
+but somehow became one of the loudest parts of my heart.
+
+<br><br>
+
+You are appreciated more than you realize.
+
+You are cared for more than you know.
+
+And loved more than words can explain.
+
+❤️
+
+<br><br>
+
+Forever Yours,
+
+<br>Khwahish ❤️
+
+</p><button onclick="showPage(12)">
+Continue ❤️
+</button></div></div></div><!-- PAGE 12 --><div class="page" id="page12"><div class="card"><h1>🫂 Our Forever ❤️</h1><h2>Scene One</h2><img src="file_00000000b908720987a1b049c7829641~2.png"><p style="font-size:22px;line-height:2;">In every memory...
+
+In every smile...
+
+In every moment...
+
+I found a little more of you ❤️
+
+</p><hr style="margin:30px;"><h2>Scene Two 💍</h2><img src="file_00000000b908720987a1b049c7829641~3.png"><p style="font-size:24px;line-height:2;">Will you keep choosing me...
+
+today,
+
+tomorrow,
+
+and every chapter yet to come?
+
+❤️
+
+</p><h2>Forever Yours,
+
+<br>Khwahish ❤️
+
+</h2></div></div><script>
+
+function showPage(page){
+
+document.querySelectorAll('.page').forEach(p=>{
+p.classList.remove('active');
+});
+
+document.getElementById('page'+page).classList.add('active');
+
+}
+
+function checkPassword(){
+
+let password=document.getElementById('password').value;
+
+if(password==="26-02-2026"){
+
+showPage(3);
+
+startLoading();
+
+}else{
+
+document.getElementById('passMsg').innerHTML=
+"Wrong Password ❤️";
+
+}
+
+}
+
+function startLoading(){
+
+let percent=0;
+
+let load=document.getElementById('loadingText');
+
+let msg=document.getElementById('loadingMsg');
+
+let interval=setInterval(()=>{
+
+percent++;
+
+load.innerHTML=percent+"%";
+
+if(percent<30){
+
+msg.innerHTML="Searching happiness...";
+
+}else if(percent<60){
+
+msg.innerHTML="Searching comfort...";
+
+}else if(percent<90){
+
+msg.innerHTML="Searching favorite person...";
+
+}else{
+
+msg.innerHTML="Match Found ❤️";
+
+}
+
+if(percent>=100){
+
+clearInterval(interval);
+
+setTimeout(()=>{
+showPage(4);
+},1000);
+
+}
+
+},40);
+
+}
+
+function showGift(){
+
+document.getElementById('giftLetter').style.display='block';
+
+for(let i=0;i<40;i++){
+
+let heart=document.createElement('div');
+
+heart.className='heart';
+
+heart.innerHTML='❤️';
+
+heart.style.left=Math.random()*100+'vw';
+
+heart.style.fontSize=(Math.random()*25+20)+'px';
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+
+}
+
+}
+
+</script></body>
+</html>
 
